@@ -19,3 +19,7 @@ print("c.value = {}".format(c.value))
 print('Row {}, Column {} is {}'.format(c.row, c.column, c.value))
 print("Cell {} is {}".format(c.coordinate, c.value))
 print("sheet['C1'].value = {}".format(sheet['C1'].value))
+print(sheet.cell(row=1, column=2))
+print(sheet.cell(row=1, column=2).value)
+for i in range(1, 8, 2):
+    print(i, sheet.cell(row=i, column=2).value)
